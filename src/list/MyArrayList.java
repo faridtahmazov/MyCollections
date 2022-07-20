@@ -61,5 +61,20 @@ public class MyArrayList {
         count--;
     }
 
+    public static void printArrayList(MyArrayList arrayList){
+        System.out.print("[");
+        for (int i=0; i<arrayList.sizeOfArray; i++){
+            String space;
+            System.out.print(arrayList.array[i]);
+            if (arrayList.sizeOfArray-1==i){
+                space="";
+                break;
+            }else {
+                space = ", ";
+            }
 
+            System.out.print(space);
+        }
+        System.out.println("]");
+    }
 }
