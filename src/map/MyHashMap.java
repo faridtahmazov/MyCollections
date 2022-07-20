@@ -1,6 +1,5 @@
 package map;
 
-import list.MyArrayList;
 import map.hashMapUtil.Entry;
 import map.hashMapUtil.Key;
 import map.hashMapUtil.Value;
@@ -19,6 +18,8 @@ public class MyHashMap {
         }
 
         int ix = getIndex(key)%hashMap.length;
+        System.out.println("key(index): " + getIndex(key));
+        System.out.println("hash map length: " + hashMap.length);
 
         if (hashMap[ix] == null){
             hashMap[ix] = new LinkedList<>();
